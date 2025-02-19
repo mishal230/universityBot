@@ -1,0 +1,111 @@
+
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.init({
+            chatflowid: "fba27bd5-a3a2-4fdf-ac88-ab8930050a30",
+            apiHost: "https://mishalzubair-flowise.hf.space",
+            chatflowConfig: {
+            /* Chatflow Config */
+        },
+        observersConfig: {
+            /* Observers Config */
+        },
+        theme: {
+            button: {
+                backgroundColor: '#dc3545',
+                right: 30,
+                bottom: 70,
+                size: 50,
+                dragAndDrop: true,
+                iconColor: '#fff',
+              //  customIconSrc: '',
+                autoWindowOpen: {
+                    autoOpen: true,
+                    openDelay: 2,
+                    autoOpenOnMobile: false
+                }
+            },
+            tooltip: {
+                showTooltip: true,
+                tooltipMessage: 'Hi!',
+                tooltipBackgroundColor: '#dc3545',
+                tooltipTextColor: 'white',
+                tooltipFontSize: 16
+            },
+            // disclaimer: {
+            //     title: 'Disclaimer',
+            //     message: "By using this chatbot, you agree to the <a target=\"_blank\" href=\"https://flowiseai.com/terms\">Terms & Condition</a>",
+            //     textColor: 'black',
+            //     buttonColor: '#333',
+            //     buttonText: 'Start Chatting',
+            //     buttonTextColor: 'white',
+            //     blurredBackgroundColor: 'rgba(0, 0, 0, 0.4)',
+            //     backgroundColor: 'white'
+            // },
+            customCSS: ``,
+            chatWindow: {
+                showTitle: true,
+                showAgentMessages: true,
+                title: 'Indus Assistant',
+            //    titleAvatarSrc: 'mail_3373249.png',
+                 welcomeMessage : "Hi. How can I assist you today?",
+                errorMessage: 'Oh dear! Something went wrong. Could you say it differently?.',
+                backgroundColor: '#fff',
+          //      backgroundImage: '5581931_3636.jpg',
+                height: 600,
+                width: 400,
+                fontSize: 16,
+                // starterPrompts: [
+                //     "What is a bot?",
+                //     "Who are you?"
+                // ],
+                starterPromptFontSize: 15,
+                clearChatOnReload: false,
+                sourceDocsTitle: 'Sources:',
+                renderHTML: true,
+                botMessage: {
+                    backgroundColor: '#fff',
+                    textColor: '#343a40',
+                  //  showAvatar: true,
+                    avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png'
+                },
+                userMessage: {
+                    backgroundColor: '#fff',
+                    textColor: '#343a40',
+                  //  showAvatar: true,
+                    avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png'
+                },
+                textInput: {
+                    placeholder: 'Type your question',
+                    backgroundColor: '#ffffff',
+                    textColor: '#303235',
+                    sendButtonColor: '#dc3545',
+                    maxChars: 50,
+                    maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+                    autoFocus: true,
+                    sendMessageSound: true,
+                    sendSoundLocation: 'send_message.mp3',
+                    receiveMessageSound: true,
+                    receiveSoundLocation: 'receive_message.mp3'
+                },
+                feedback: {
+                    color: '#303235'
+                },
+                dateTimeToggle: {
+                    date: true,
+                    time: true
+                },
+                footer: {
+                    textColor: '',
+                    text: '',
+                    company: '',
+                    companyLink: ''
+                }
+          
+            }
+        }
+    })
+
+    </script>
+    
+    
